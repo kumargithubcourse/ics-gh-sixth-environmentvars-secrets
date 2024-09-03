@@ -10,8 +10,10 @@ jobs:
   test:
     env: 
       MONGODB_CLUSTER_ADDRESS: mongocluster426.p4wwr.mongodb.net
-      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
-      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
+      MONGODB_USERNAME: varapasagadi
+        #${#{ secrets.MONGODB_USERNAME }}#
+      MONGODB_PASSWORD: uVcI88J3KeszynhA
+        #${#{ secrets.MONGODB_PASSWORD }}#
       PORT: 8080
     # env:
     #   MONGODB_CLUSTER_ADDRESS: mongocluster426.mongocluster.cosmos.azure.com
